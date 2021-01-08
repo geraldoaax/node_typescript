@@ -1,0 +1,15 @@
+#yarn init -y
+#yarn add typescript -D
+#yarn tsc --init
+--> Configurar .dist no outdir e .src no rootdist
+#yarn tsc --> convert projeto typescript
+#yarn add @types/express -D --> sempre usar o @types/ para o typscript 
+---------------------------------
+# yarn add ts-node-dev -D --> compilar e executar direto..
+
+ "scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+
+
